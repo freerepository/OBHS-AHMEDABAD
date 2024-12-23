@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activitylinen.UserListActivity">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/v_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:scaleType="fitStart"
+            android:src="@drawable/back"
+            app:tint="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv_tittle1"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="46dp"
+            android:layout_toStartOf="@+id/bt_view_register"
+            android:layout_toEndOf="@+id/v_back_btn"
+            android:gravity="center"
+            android:text="User Lists"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18sdp" />
+
+        <Button
+            android:id="@+id/bt_view_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_view"
+            android:text="Add User"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="@dimen/_6sdp"
+          android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="12dp"
+           android:layout_alignParentEnd="true"/>
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/v_back_btn"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_toLeftOf="@+id/iv_search"
+            android:background="@drawable/bg_corner8"
+            android:gravity="center"
+            android:hint="Search by Employee Name/ID"
+            android:inputType="text"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignTop="@+id/et_search"
+            android:layout_alignBottom="@+id/et_search"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_menu_search"
+            app:tint="@color/colorWhite" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal"
+        android:background="#514D54"
+        android:layout_below="@id/rl">
+        <TextView
+            android:id="@+id/tv_index_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="S.N."/>
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="2dp"
+            android:text="Emp. Id"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="2dp"
+            android:text="User Name"/>
+
+
+        <TextView
+            android:id="@+id/tv_trainNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_weight="2.3"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="2dp"
+            android:text="User Type"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.4"
+            android:textSize="12sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_margin="2dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="Phone"/>
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="5sp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_empty_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Data not found"
+        android:textColor="#F44336"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sedulous.obhsadi.activitylinen.AttendanceInActivity"
+    tools:showIn="@layout/activity_attendance_in">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/lll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/supOfficer_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapes"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/calendar_icon"
+                        android:backgroundTint="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/et_dateSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="25sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:background="@null"
+                        android:backgroundTint="@color/hint_color"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:hint="Select Date"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/supOfficer_layout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/shapes"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/et_time_icon"
+                        android:backgroundTint="@color/colorPrimary" />
+
+                    <EditText
+                        android:id="@+id/et_timeSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="25sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:background="@null"
+                        android:backgroundTint="@color/hint_color"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:hint="Select Time"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rlv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapes">
+
+                    <Spinner
+                        android:id="@+id/sp_train_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_centerVertical="true"
+                        android:focusable="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:hint=""
+                        android:textSize="14dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rls"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapes">
+
+                    <EditText
+                        android:id="@+id/et_coach"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:hint="Enter Coach "
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:textIsSelectable="true"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rlv3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapes">
+
+                    <EditText
+                        android:id="@+id/et_userId"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:hint="Enter Emp ID "
+                        android:inputType="textCapCharacters"
+                        android:maxLength="8"
+                        android:maxLines="1"
+                        android:textIsSelectable="true"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapes">
+
+                    <Spinner
+                        android:id="@+id/sp_names"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:importantForAutofill="yes"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:textIsSelectable="true"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rlv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/shapes">
+
+
+                <Spinner
+                    android:id="@+id/sp_train_no2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:hint=""
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identity Image of Sup / Janitor" />
+
+                <TextView
+                    android:id="@+id/tv_capture_id_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:padding="5dp"
+                    android:text="(Click Image)"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/file_upload_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/et_white_bg"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:id="@+id/img_train1"
+                    android:layout_width="match_parent"
+                    android:layout_height="220sp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/ic_menu_camera" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_white_bg"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:text="SUBMIT"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

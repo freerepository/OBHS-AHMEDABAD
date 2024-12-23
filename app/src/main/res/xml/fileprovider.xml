@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--amardeep-->
+<!--<paths>-->
+<!--    <external-path-->
+<!--        name="external_files"-->
+<!--        path="." />-->
+<!--    <external-files-path-->
+<!--        name="external_files"-->
+<!--        path="." />-->
+<!--    &lt;!&ndash; FOR SD CARD&ndash;&gt;-->
+<!--    <root-path-->
+<!--        name="/"-->
+<!--        path="." />-->
+<!--</paths>-->
+
+<paths>
+    <external-path name="external_files" path="." />
+    <external-files-path name="external_files" path="." />
+    <root-path name="/" path="." />
+</paths>

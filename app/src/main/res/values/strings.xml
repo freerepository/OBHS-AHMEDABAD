@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">OBHS Ahmedabad</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="title_activity_passenger_details">Passenger Details</string>
+    <string name="title_activity_passenger_feedback">Passenger Feedback</string>
+
+    <string name="passenger_feedback_ac"><u>Passenger Feedback - AC Coach</u></string>
+    <string name="passenger_feedback_non_ac"><u>Passenger Feedback - Non-AC Coach</u></string>
+    <string name="title_activity_passenger_feedback_non_ac">PassengerFeedbackNonAcActivity</string>
+    <string name="title_activity_inspector_review">InspectorReviewActivity</string>
+    <string name="tte_feedback_ac"><u>TTE Feedback - AC Coach</u></string>
+    <string name="tte_feedback_non_ac"><u>TTE Feedback - Non-AC Coach</u></string>
+
+    <string name="internet_connection_text">Please check your internet connection.</string>
+    <string name="mobile_number_length_text">Please enter a valid mobile number</string>
+    <string name="password_length_text">Please enter a valid password</string>
+    <string name="title_activity_otp_verify">Otp Verify</string>
+
+    <string name="text_excellent">5=Excellent</string>
+    <string name="text_very_good">4=Very Good</string>
+    <string name="text_good">3=Good</string>
+    <string name="text_average">2=Average</string>
+    <string name="text_poor">1=Poor</string>
+    <string name="title_activity_tte_detail">TteDetailActivity</string>
+    <string name="title_activity_tte_feedback">TteFeedbackActivity</string>
+    <string name="q_b6">Providing fresh bed roll to passengers
+                        within 30 minutes of their boarding and
+                        collecting the used linen before 30
+                        minutes of alighting of passengers.
+                        Behavior of Janitor / supervisors for
+                        delivery of services</string>
+    <string name="ruppee_text">₹</string>
+
+    <string name="pnr_key">1g33fp364h</string>
+    <!--<string name="pnr_key">1g33fp364h</string>-->
+
+
+    <string name="internet_connection_error">Please check your internet connection</string>
+    <string name="select_date">Journey date</string>
+    <string name="select_current_date">Current date</string>
+    <string name="select_id_card">Id card no.</string>
+    <string name="name_accn">Name of Accn</string>
+</resources>

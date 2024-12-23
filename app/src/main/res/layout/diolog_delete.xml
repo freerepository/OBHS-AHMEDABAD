@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hint_color"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_corner8"
+        android:elevation="@dimen/_8sdp"
+        android:layout_margin="@dimen/_32sdp">
+        <TextView
+            android:id="@+id/tv_userr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccentlinen"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Are You Sure \nWant to Delete ?"/>
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/_4sdp"
+            android:hint="User Name"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/v_negative"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/bg_corner8"
+                android:gravity="center"
+                android:elevation="@dimen/_2sdp"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:text="NO"/>
+            <TextView
+                android:id="@+id/v_positive"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/bg_corner8"
+                android:gravity="center"
+                android:elevation="@dimen/_2sdp"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:textColor="@android:color/white"
+                android:text="YES"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

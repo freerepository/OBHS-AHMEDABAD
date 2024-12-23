@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/drawable/shapes.xml" value="0.2775" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/drawable/spinner_view.xml" value="0.2775" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout-large/activity_attendance_out.xml" value="0.5" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout-large/content_attendanceinput.xml" value="0.33" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_attendance_in.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_attendance_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_attendance_out.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_login_user_selection.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_registraion.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_supervisor.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/activity_user_list.xml" value="0.67" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/content_attendanceinput.xml" value="0.33" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/dialog_seconds_picker.xml" value="0.271875" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/header_attendance_out.xml" value="0.27291666666666664" />
+        <entry key="..\:/OBHS_Ahmedabad/app/src/main/res/layout/header_user_list.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
