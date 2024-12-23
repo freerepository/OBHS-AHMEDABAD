@@ -80,7 +80,8 @@ import java.util.Map;
 
 public class AttendanceInActivity extends AppCompatActivity {
     public static String TRAIN_LIST = "http://obhsadi.projectrailway.in/api/atd/getTrain";
-    public static String Upload_In_Data = "http://obhsadi.projectrailway.in/api/atd/save_attendancedata";
+//    public static String Upload_In_Data = "http://obhsadi.projectrailway.in/api/atd/save_attendancedata";
+    public static String Upload_In_Data = "http://obhsadi.projectrailway.in/api/atd/save_attendancedata_manual";
     public static String STORING_Image = "http://obhsadi.projectrailway.in/api/atd/upload_userimage";
     public static String Emp_type = "http://obhsadi.projectrailway.in/api/atd/get_employee_by_ID";
     public static String Get_Station = "http://obhsadi.projectrailway.in/api/atd/get_tstations";

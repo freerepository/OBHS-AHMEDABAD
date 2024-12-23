@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -77,6 +78,12 @@ public class SupervisorActivity extends AppCompatActivity {
         srl = findViewById(R.id.srl);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         Main_Category();
+        srl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                Main_Category();
+            }
+        });
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,6 +132,7 @@ public class SupervisorActivity extends AppCompatActivity {
         StringRequest request=new StringRequest(Request.Method.GET, Main_Category, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                srl.setRefreshing(false);
                 Log.d("kumar", response);
 
                 MainCategory getlist = new Gson().fromJson(response, MainCategory.class);
@@ -134,6 +142,8 @@ public class SupervisorActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                srl.setRefreshing(false);
+
                 Log.e("volley", error.toString());
 
             }
