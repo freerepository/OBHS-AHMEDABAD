@@ -266,6 +266,8 @@ public class AttendanceListActivity extends AppCompatActivity {
             holder.tv4.setText(linenList.get(position).RAPD_Field4);
             holder.tv5.setText(linenList.get(position).mCoach);
             holder.tv6.setText(linenList.get(position).RAPD_PunchDateTime);
+            holder.tv7.setText(linenList.get(position).address);
+
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -289,7 +291,7 @@ public class AttendanceListActivity extends AppCompatActivity {
 
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
-            TextView tv1, tv2, tv3, tv4, tv5, tv6;
+            TextView tv1, tv2, tv3, tv4, tv5, tv6,tv7;
 
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -299,6 +301,7 @@ public class AttendanceListActivity extends AppCompatActivity {
                 tv4 = (TextView) itemView.findViewById(R.id.tv_trainNo);
                 tv5 = (TextView) itemView.findViewById(R.id.tv_coach);
                 tv6 = (TextView) itemView.findViewById(R.id.tv_date);
+                tv7 = (TextView) itemView.findViewById(R.id.tv_address);
             }
         }
     }

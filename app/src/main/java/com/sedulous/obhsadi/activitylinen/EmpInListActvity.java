@@ -144,6 +144,7 @@ public class EmpInListActvity extends AppCompatActivity {
             holder.tv4.setText(linenList.get(position).RAPD_Field4);
             holder.tv5.setText(linenList.get(position).mCoach);
             holder.tv6.setText(linenList.get(position).RAPD_PunchDateTime);
+            holder.tv7.setText(linenList.get(position).address);
 
             if (linenList.isEmpty()) {
                 recyclerView.setVisibility(View.GONE);
@@ -166,7 +167,7 @@ public class EmpInListActvity extends AppCompatActivity {
 
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
-            TextView tv1,tv2,tv3, tv4,tv5,tv6;
+            TextView tv1,tv2,tv3, tv4,tv5,tv6,tv7;
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
                 tv1=(TextView)itemView.findViewById(R.id.tv_index_number);
@@ -175,6 +176,7 @@ public class EmpInListActvity extends AppCompatActivity {
                 tv4=(TextView)itemView.findViewById(R.id.tv_trainNo);
                 tv5=(TextView)itemView.findViewById(R.id.tv_coach);
                 tv6=(TextView)itemView.findViewById(R.id.tv_date);
+                tv7=(TextView)itemView.findViewById(R.id.tv_address);
             }
         }
     }

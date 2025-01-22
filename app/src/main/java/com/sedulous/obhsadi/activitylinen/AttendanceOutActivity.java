@@ -99,7 +99,6 @@ public class AttendanceOutActivity extends AppCompatActivity {
     GetAttById getAttById;
     AlertDialog dialog;
 
-
     Spinner spStation;
     EditText et_dateSelect, et_timeSelect;
     String latitude;
